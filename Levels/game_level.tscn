@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://byskuoo8ce1f0"]
+[gd_scene load_steps=16 format=3 uid="uid://byskuoo8ce1f0"]
 
 [ext_resource type="PackedScene" uid="uid://ig1b0lxjxdrx" path="res://Characters/player_cat.tscn" id="1_f301i"]
 [ext_resource type="Texture2D" uid="uid://dnhmgqpxqe3eq" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/ground tiles/old tiles/Grass.png" id="2_31thb"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://o6207ps3hqe8" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/Water.png" id="5_su01i"]
 [ext_resource type="Texture2D" uid="uid://dmkkaumpy83b3" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/Wooden House.png" id="6_xnvp8"]
 [ext_resource type="Texture2D" uid="uid://b8xesdpxccfct" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/Fences.png" id="7_nqjuo"]
+[ext_resource type="PackedScene" uid="uid://cwegyp1plyhaw" path="res://Characters/cow.tscn" id="8_m6sm7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0slma"]
 texture = ExtResource("2_31thb")
@@ -730,5 +731,13 @@ metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(232, 141)
-position_smoothing_enabled = true
 position_smoothing_speed = 1.0
+
+[node name="Cow1" parent="." instance=ExtResource("8_m6sm7")]
+position = Vector2(233, 205)
+
+[node name="Cow2" parent="." instance=ExtResource("8_m6sm7")]
+position = Vector2(174, 150)
+
+[node name="Cow3" parent="." instance=ExtResource("8_m6sm7")]
+position = Vector2(466, 171)

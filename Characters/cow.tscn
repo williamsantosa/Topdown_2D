@@ -84,7 +84,7 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id="AnimationNodeStateMachinePlayback_0yfos"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Cow" type="CharacterBody2D"]
 script = ExtResource("1_ctxtn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

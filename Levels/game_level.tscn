@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://byskuoo8ce1f0"]
+[gd_scene load_steps=18 format=3 uid="uid://byskuoo8ce1f0"]
 
 [ext_resource type="PackedScene" uid="uid://ig1b0lxjxdrx" path="res://Characters/player_cat.tscn" id="1_f301i"]
 [ext_resource type="Texture2D" uid="uid://dnhmgqpxqe3eq" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/ground tiles/old tiles/Grass.png" id="2_31thb"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dmkkaumpy83b3" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/Wooden House.png" id="6_xnvp8"]
 [ext_resource type="Texture2D" uid="uid://b8xesdpxccfct" path="res://Art/Sprout-Lands_Sprites_Basic pack/Tilesets/Fences.png" id="7_nqjuo"]
 [ext_resource type="PackedScene" uid="uid://cwegyp1plyhaw" path="res://Characters/cow.tscn" id="8_m6sm7"]
+[ext_resource type="PackedScene" uid="uid://b3sg37q0tjdph" path="res://Objects/chest.tscn" id="9_siipe"]
+[ext_resource type="PackedScene" uid="uid://ch8t7col8lttn" path="res://Objects/furniture.tscn" id="10_3yyts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0slma"]
 texture = ExtResource("2_31thb")
@@ -706,6 +708,7 @@ sources/4 = SubResource("TileSetAtlasSource_hi338")
 sources/5 = SubResource("TileSetAtlasSource_81sy5")
 
 [node name="GameLevel" type="Node2D"]
+y_sort_enabled = true
 
 [node name="PlayerCat" parent="." instance=ExtResource("1_f301i")]
 position = Vector2(232, 141)
@@ -741,3 +744,15 @@ position = Vector2(174, 150)
 
 [node name="Cow3" parent="." instance=ExtResource("8_m6sm7")]
 position = Vector2(466, 171)
+
+[node name="Chest1" parent="." instance=ExtResource("9_siipe")]
+position = Vector2(287, 136)
+
+[node name="Chest2" parent="." instance=ExtResource("9_siipe")]
+position = Vector2(430, 97)
+
+[node name="Chest3" parent="." instance=ExtResource("9_siipe")]
+position = Vector2(308, 136)
+
+[node name="Bed" parent="." instance=ExtResource("10_3yyts")]
+position = Vector2(285, 205)

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://byskuoo8ce1f0"]
+
+[ext_resource type="PackedScene" uid="uid://ig1b0lxjxdrx" path="res://Characters/player_cat.tscn" id="1_f301i"]
+
+[node name="GameLevel" type="Node2D"]
+
+[node name="PlayerCat" parent="." instance=ExtResource("1_f301i")]
